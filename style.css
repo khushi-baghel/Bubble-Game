@@ -93,3 +93,22 @@ html, body {
 .btn:hover {
     background-color: rgba(28, 57, 28,0.90);
 }
+@media (max-width: 600px) {
+    .box{
+        width: 35px ;
+        padding: 3px;
+    }
+    #timmer {
+        padding: 3px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .bubble {
+        height:38px;
+        width: 38px;
+    }
+    .pbtm {
+        padding: 5px 10px 0 20px;
+    }
+}

@@ -3,8 +3,13 @@ let score = 0;
 function makeBubble() {
     let clutter = "";
     for (let i=1; i<=133; i++) {
-        let rdm = Math.floor(Math.random() * 10);
-        clutter += `<div class="bubble">${rdm}</div>`;
+        if (window.innerWidth < 550) {
+            let rdm = Math.floor(Math.random() * 7);
+            clutter += `<div class="bubble">${rdm}</div>`;
+        } else {
+            let rdm = Math.floor(Math.random() * 10);
+            clutter += `<div class="bubble">${rdm}</div>`;
+        }
     };
 
     let pbtm = document.querySelector(".pbtm");
@@ -36,8 +41,13 @@ function decreaseTime() {
 }
 function getHit() {
     let hit = document.querySelector("#hit");
+    if (window.innerWidth < 550) {
+        hitVal = Math.floor(Math.random() * 7);
+        hit.innerText = hitVal;
+    } else {
     hitVal = Math.floor(Math.random() * 10);
     hit.innerText = hitVal;
+    }
 }
 function getTarget() {
     let pbtm = document.querySelector(".pbtm");

@@ -12,4 +12,4 @@ HTML: For the basic structure of the game.
 CSS: For styling the game elements.
 JavaScript: For game logic and interactivity.
 # Demo
-You can play the game (https://khushi-baghel.github.io/Bubble-Game/).
+You can play the game here https://khushi-baghel.github.io/Bubble-Game/
